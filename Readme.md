@@ -24,7 +24,7 @@ python testScript_finalTraining.py
 ## Re-training the network
 python largeScale_net.py --mode train --output_dir $OutputDir --input_dir $inputDir --which_direction AtoB --nbTargets 4 --test_freq 20000 --input_size 2048 --loss mixed --batch_size 2 --lr 0.00002 --max_steps 2000000 --useLog --inputMode folder --feedMethod render --jitterLightPos --jitterViewPos --renderingScene diffuse --includeDiffuse --testApproach render --test_input_size 2048
 
-##Bibtex
+## Bibtex
 If you use our code, please cite our paper:
 
 @Article{DDB20,
