@@ -3,6 +3,7 @@
 This repository contains the code for our paper "Guided Fine-Tuning for Large-Scale Material Transfer, Valentin Deschaintre, George Drettakis, Adrien Bousseau. Computer Graphics Forum (Eurographics Symposium on Rendering Conference Proceedings),  jul 2020".
 
 The project webpage can be found here: https://team.inria.fr/graphdeco/projects/large-scale-materials/
+
 **The data for the pre-training can be found on the project webpage.**
 
 ##Paper abstract
