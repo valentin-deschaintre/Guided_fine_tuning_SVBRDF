@@ -18,6 +18,14 @@ import helpers
 import shutil
 from random import shuffle
 
+#!!!If running TF v > 2.0 uncomment those lines (also remove the tensorflow import on line 5):!!!
+#import tensorflow.compat.v1 as tf
+#tf.disable_v2_behavior()
+
+#Under MIT License
+
+#Source code tested for tensorflow version 1.12
+
 parser = argparse.ArgumentParser()
 
 parser.add_argument("--mode", required=(__name__ == '__main__'), choices=["train", "test", "finetune"])
