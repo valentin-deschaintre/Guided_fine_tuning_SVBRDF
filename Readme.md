@@ -13,6 +13,11 @@ The video belows shows some of our results.
 
 [![Results video](https://www.youtube.com/embed/x7xB9aGrn9Y/0.jpg)](https://www.youtube.com/embed/x7xB9aGrn9Y)
 
+## /!\Material model
+This method is designed to take gamma corrected large scale input pictures (which is internally linearized assuming gamma 2.2) and output gamma corrected albedos maps of the large scale input picture.
+
+The model used is the one described in our single image capture paper: https://github.com/valentin-deschaintre/Single-Image-SVBRDF-Capture-rendering-loss (similar to Adobe Substance), **changing the rendering model implementation to render the results will cause strong appearance difference** as different implementations use the parameters differently (despite sharing their names, for example diffuse and specular will be controled for light conservation or roughness will be squared)! 
+
 ## Software requirements
 This code relies on Tensorflow 1.X but can be adapted to TF 2.X with the following compatibility code:
 
