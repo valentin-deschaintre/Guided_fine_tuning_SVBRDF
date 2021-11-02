@@ -25,7 +25,7 @@ This code relies on Tensorflow 1.X but can be adapted to TF 2.X with the followi
     import tensorflow.compat.v1 as tf
     tf.disable_v2_behavior()
     
-It is based on python 3.X, numpy, imageio and opencv for python.
+It is based on python 3.X, numpy, imageio and opencv for python. The code was tested on Tensorflow 1.14.
 
 ## Running the finetuning
 **First download the pre trained weights here: https://repo-sam.inria.fr/fungraph/large_scale_materials/saved_weights.zip**
