@@ -1,6 +1,7 @@
 import os
 import glob
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 from random import shuffle
 import helpers
 import math

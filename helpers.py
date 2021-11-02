@@ -1,5 +1,6 @@
 import os
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import numpy as np
 import math
 import acquisitionScene
@@ -283,9 +284,9 @@ def deprocess_outputs(outputs):
     outputedRoughness = outputs[:,:,:,5]
     outputedSpecular = outputs[:,:,:,6:9]
     normalShape = tf.shape(partialOutputedNormals)
-    newShape = [normalShape[0], normalShape[1], normalShape[2], 1]
+    #newShape = [normalShape[0], normalShape[1], normalShape[2], 1]
     #normalShape[-1] = 1
-    tmpNormals = tf.ones(newShape, tf.float32)
+    tmpNormals = tf.ones_like(outputs[:,:,:,0:1], dtype= tf.float32)
 
     normNormals = tf_Normalize(tf.concat([partialOutputedNormals, tmpNormals], axis = -1))
     outputedRoughnessExpanded = tf.expand_dims(outputedRoughness, axis = -1)

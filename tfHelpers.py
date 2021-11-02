@@ -1,6 +1,6 @@
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
+tf.disable_v2_behavior()
 import numpy as np
-import tensorflow.contrib.slim as slim
 
 def conv(batch_input, out_channels, stride, filterSize=4, initScale = 0.02, useXavier=False, paddingSize = 1, useBias=False):
 
